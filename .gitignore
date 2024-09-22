@@ -1,0 +1,25 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment directories
+.env
+.venv/
+cf-python-base/
+cf-python-copy/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Distribution / packaging
+.DS_Store
+.egg-info/
+dist/
+build/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
