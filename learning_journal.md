@@ -20,6 +20,8 @@
 
 ## Date: 10/6/2024
 
+## Operators & Functions In Python
+
 - **What I learned today**:
 
   - How to create a more complex Python script that handles multiple recipes and ingredients.
@@ -54,6 +56,8 @@
   ## Date: 10/06/2024
 
 ### What I learned today:
+
+### File Handling In Python
 
 1. Creating and working with binary files using Python's pickle module:
 
@@ -107,3 +111,58 @@
 2. Creating more complex, interactive command-line applications
 3. Implementing search functionality in Python
 4. Better understanding of nested data structures and how to manipulate them
+
+## Date: 10/06/2024
+
+### Object-Oriented Programming in Python: Recipe Management System
+
+#### What I learned today:
+
+1. Class Definition and Object Creation:
+
+   - Defined a Recipe class with attributes like name, ingredients, cooking time, and difficulty.
+   - Created multiple recipe objects (Pasta Carbonara, Simple Salad, Banana Smoothie, Cake).
+
+2. Encapsulation:
+
+   - Used private attributes and public methods to access and modify recipe data.
+   - Implemented getter and setter methods for name and cooking time.
+
+3. Methods Implementation:
+
+   - Created methods like add_ingredients(), calculate_difficulty(), and search_ingredient().
+   - Implemented a special method **str**() for string representation of recipes.
+
+4. Class Variables:
+
+   - Used a class variable all_ingredients to keep track of all unique ingredients across recipes.
+
+5. Method Overloading:
+
+   - Implemented add_ingredients() method to accept variable number of arguments.
+
+6. Abstraction:
+
+   - Created methods like calculate_difficulty() to hide complex logic from the user.
+
+7. Search Functionality:
+   - Implemented a recipe_search() function to search recipes based on ingredients.
+
+#### Challenges faced:
+
+1. Designing the class structure to efficiently represent recipes.
+2. Implementing the logic for calculating recipe difficulty.
+3. Ensuring that the all_ingredients list stays updated and avoids duplicates.
+
+#### How I overcame these challenges:
+
+1. Carefully planned the Recipe class attributes and methods before implementation.
+2. Used conditional statements to implement the difficulty calculation logic.
+3. Implemented a case-insensitive check for ingredients to avoid duplicates in all_ingredients.
+
+#### New skills acquired:
+
+1. Creating and working with classes and objects in Python.
+2. Implementing various OOP concepts like encapsulation and abstraction.
+3. Using class variables to store data shared across all instances.
+4. Implementing search functionality within a collection of objects.
