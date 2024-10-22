@@ -174,7 +174,43 @@ def update_recipe(conn, cursor):
     print("\nRecipe updated successfully!")
 
 def delete_recipe(conn, cursor):
-    print("Delete Recipe functionality to be implemented.")
+    # Display all recipes
+    cursor.execute("SELECT id, name, ingredients, cooking_time, difficulty FROM Recipes")
+    results = cursor.fetchall()
+    
+    if not results:
+        print("\nNo recipes found in the database.")
+        return
+    
+    print("\nAvailable recipes:")
+    for recipe in results:
+        print(f"\nID: {recipe[0]}")
+        print(f"Name: {recipe[1]}")
+        print(f"Ingredients: {recipe[2]}")
+        print(f"Cooking Time: {recipe[3]} minutes")
+        print(f"Difficulty: {recipe[4]}")
+    
+    # Get recipe ID to delete
+    while True:
+        try:
+            recipe_id = int(input("\nEnter the ID of the recipe you want to delete: "))
+            cursor.execute("SELECT * FROM Recipes WHERE id = %s", (recipe_id,))
+            recipe = cursor.fetchone()
+            if recipe:
+                break
+            else:
+                print("Recipe not found. Please enter a valid ID.")
+        except ValueError:
+            print("Please enter a valid number.")
+    
+    # Confirm deletion
+    confirm = input(f"\nAre you sure you want to delete this recipe? (yes/no): ")
+    if confirm.lower() == 'yes':
+        cursor.execute("DELETE FROM Recipes WHERE id = %s", (recipe_id,))
+        conn.commit()
+        print("\nRecipe deleted successfully!")
+    else:
+        print("\nDeletion cancelled.")
 
 def main_menu(conn, cursor):
     while True:
