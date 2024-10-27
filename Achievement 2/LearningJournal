@@ -140,3 +140,65 @@
 - Django documentation
 - Project setup guides
 - Best practices for Django structure
+
+## Date: 10/27/2024
+
+# Learning Journal - Exercise 2.3
+
+## Database Schema and App Structure
+
+Created a detailed database schema for the Recipe application with three main entities:
+
+- Recipes (name, cooking_time, description, difficulty)
+- Ingredients (name, quantity, unit)
+- Categories (name)
+
+Established relationships:
+
+- Recipe to Ingredients: Many-to-Many
+- Recipe to Category: Many-to-One
+
+## App Development Process
+
+1. Created three Django apps:
+
+   - recipes
+   - ingredients
+   - categories
+
+2. Successfully integrated apps in settings.py
+3. Implemented models with appropriate fields and relationships
+4. Created comprehensive tests for each model
+
+## Model Implementation
+
+Developed models with the following structure:
+
+- Recipe model with core cooking information
+- Ingredient model for tracking recipe components
+- Category model for recipe classification
+
+## Database Management
+
+- Successfully ran migrations
+- Created test data
+- Added five recipes through admin interface:
+  - [List your specific recipes]
+
+## Key Learnings
+
+- Database relationship management in Django
+- Test-driven development practices
+- Django admin interface customization
+- Model design and implementation
+- Migration management
+
+## Challenges and Solutions
+
+[Add any specific challenges you encountered and how you resolved them]
+
+## Next Steps
+
+- Enhance user interface
+- Add recipe search functionality
+- Implement user authentication
