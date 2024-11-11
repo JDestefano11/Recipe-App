@@ -202,3 +202,74 @@ Developed models with the following structure:
 - Enhance user interface
 - Add recipe search functionality
 - Implement user authentication
+
+# Learning Journal - Exercise 2.4 Homepage Development
+
+## Date: 11/10/2024
+
+## Technical Implementation
+
+Created a professional Recipe App homepage with:
+
+- Modern responsive design
+- Clean user interface
+- Professional styling elements
+
+Key components developed:
+
+- Homepage view in views.py
+- Template structure in recipes/templates
+- URL configurations for routing
+
+## Development Process
+
+1. View Implementation:
+
+   - Created function-based view
+   - Set up template rendering
+   - Established URL patterns
+
+2. Template Structure:
+
+   - Organized hierarchical folders
+   - Created recipes_home.html
+   - Implemented proper Django template paths
+
+3. Styling Implementation:
+   - Modern color schemes
+   - CSS variables for consistency
+   - Responsive design elements
+   - Interactive hover effects
+   - Professional typography
+
+## Technical Achievements
+
+- Successfully set up development server
+- Created clean URL routing
+- Implemented mobile-responsive design
+- Added professional styling features:
+  - Gradient backgrounds
+  - Shadow effects
+  - Custom list styling
+  - Responsive containers
+
+## Key Learnings
+
+- Django template system
+- URL pattern configuration
+- View implementation
+- CSS best practices
+- Project structure organization
+
+## Next Development Steps
+
+- Add dynamic recipe content
+- Integrate database models
+- Create recipe listing views
+- Implement user features
+
+## Resources Used
+
+- Django documentation
+- Web design principles
+- CSS styling guides
